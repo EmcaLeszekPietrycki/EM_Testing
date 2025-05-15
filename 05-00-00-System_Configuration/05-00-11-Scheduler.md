@@ -52,11 +52,12 @@ Energy Monitor can be set up to periodically scan the network for changes. If it
 
 ### 3. Host Update 
 <br>
-    - This task updates host's services by buckets. A bucket is essentially a group of services/metrics bundled together that can be preconfigured and added in bulk to hosts.
 
-    - You can speficy a bucket and a host range and all hosts in this range, will be assigned metrics/services from that bucket. 
+- This task updates host's services by buckets. A bucket is essentially a group of services/metrics bundled together that can be preconfigured and added in bulk to hosts.
 
-    - Shall a bucket be modified, the next occurence of this task will update the host with the new changes, as well. 
+- You can speficy a bucket and a host range and all hosts in this range, will be assigned metrics/services from that bucket. 
+
+- Shall a bucket be modified, the next occurence of this task will update the host with the new changes, as well. 
 
 <br>
 
@@ -64,10 +65,11 @@ Energy Monitor can be set up to periodically scan the network for changes. If it
 
 ### 4. Windows Disk Label Update:
 <br>
-    - This task is very similar in nature to #2. It populates disk labels on Windows hosts by renaming them.
 
-    - Like #2, it reads from the source, the original host. So if a disk label will change there, that disk label in Energy Monitor wil also change.
+- This task is very similar in nature to #2. It populates disk labels on Windows hosts by renaming them.
+
+- Like #2, it reads from the source, the original host. So if a disk label will change there, that disk label in Energy Monitor wil also change.
     
-    - If a label is missing all together, it will be created. If it exists, it will be changed. 
+- If a label is missing all together, it will be created. If it exists, it will be changed. 
 
 ![scheduler](/media/05_00_11_04_Scheduler.png)
