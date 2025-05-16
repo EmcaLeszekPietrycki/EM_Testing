@@ -16,9 +16,7 @@ Buckets are a functionality in Energy Monitor that allows the administrator to s
 Metrics can be assigned from various hosts. 
 
 It is recommended to create a "dummy host" which will house all such metrics, for ease and convenience of future modifications of the bucket. 
-
 </blockquote>
-
 <br>
 
 ![Buckets](/media/05_00_12_01_Buckets.png)
