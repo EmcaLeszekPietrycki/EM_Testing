@@ -61,7 +61,7 @@ Replace https://192.168.3.166 with IP of your Energy Monitor.
 Add the following line:
 
 
-<blockquote><strong>login.isSameSite: "None"</strong></blockquote>
+<blockquote style="border-left: 8px solid purple; padding: 15px;"><strong>login.isSameSite: "None"</strong></blockquote>
 <br>
 
 This is neccessary to tell Kibana to allow placing elements from different sites. 
@@ -69,7 +69,7 @@ This is neccessary to tell Kibana to allow placing elements from different sites
 
 2. Restart Kibana service with 
 
-<blockquote> systemctl restart Kibana </blockquote>
+<blockquote style="border-left: 8px solid purple; padding: 15px;"><strong> systemctl restart Kibana </strong></blockquote>
 <br>
 
 
