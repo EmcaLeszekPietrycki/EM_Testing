@@ -59,7 +59,6 @@ Energy Monitor can be set up to periodically scan the network for changes. If it
 
 - Shall a bucket be modified, the next occurence of this task will update the host with the new changes, as well. 
 
-<br>
 
 ![scheduler](/media/05_00_11_03_Scheduler.png)
 
