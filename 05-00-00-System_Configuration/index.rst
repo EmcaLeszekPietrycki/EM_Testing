@@ -14,3 +14,5 @@ Configuration Manual
    05-00-10-Configuration_files
    05-00-11-Scheduler
    05-00-12-Buckets
+   05-00-13-Plugins
+   05-00-14-Geomap
