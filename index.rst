@@ -2,7 +2,7 @@ Welcome to Energy Monitor's Documentation!
 ==========================================
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 10
    :caption: Table of Contents
 
    00-00-00-Table-of-Contents/index
