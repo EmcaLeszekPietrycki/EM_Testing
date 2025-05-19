@@ -11,4 +11,4 @@ Welcome to Energy Monitor's Documentation!
    03-00-00-Getting-started/index
    04-00-00-Operations-on-hosts/index
    05-00-00-System_Configuration/index
-   06-00-00-Reports
+   06-00-00-Reports/index
