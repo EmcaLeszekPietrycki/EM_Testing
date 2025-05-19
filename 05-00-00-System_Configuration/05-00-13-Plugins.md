@@ -13,15 +13,15 @@ There are few levels of support:
     - Nagios support forums, mailing lists, offer full help with the issues and bugs or general plugin usage.
 <br></br>
 - <strong>Best Effort</strong>
-
+<br>
     - There is no formal support policy for plugins or executables, however community and providers still offer some degree of support.
 <br></br>
 - <strong>Bug Support</strong> 
-
+<br>
     - Plugins are improved over time by the community, to address bug reports and fix requests.
 <br></br>
 - <strong>Unsupported</strong> 
-
+<br>
     - There is no support. 
 
 
