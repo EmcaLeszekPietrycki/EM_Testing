@@ -13,19 +13,19 @@ In this menu you will also see every scheduled report.
 
     Afterwards, choose the type of your report under "**Select Report type**"
 
-
+<br></br>
 2. Under "**Select Report**", pick your desired report.
-
+<br></br>
 3. You can send your report to a single recipient via an email or multiple recipients, under "**Recpients**" field. Separate each e-ail address from the next, with a "**,**" sign. 
-
+<br></br>
 4. "**Filename**" field allwos you to specify the name for your report. 2 formats are available, PDF and CSV. By default PDF is generated, regardless of name. However, if you wish to generate a CSV file, make sure your name ends in .csv. 
 
     ie. my_test_report.csv
-
+<br></br>
 5. "**Description**" field allows you to insert a plain text explanation of what this report does, what it consists of, etc.
-
+<br></br>
 6. "**Attach description**" will append your description to the general description which is automatically generated for each report. 
-
+<br></br>
 7.  "**Save report on Monitor Server?**" field allows you to specify where on the mainframe should the report be saved. Absolute paths are mandatory, ie. /home/reports.
-
+<br></br>
 8. You can then choose the hour at which the report will be generated, when, etc.
