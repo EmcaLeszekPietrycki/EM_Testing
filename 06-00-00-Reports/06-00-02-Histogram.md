@@ -1,5 +1,8 @@
 # Histogram report
 
+a Histogram offers a way to visualize various event types across specified timeframe on chosen hosts. 
+
+
 Enter "**Report**" -> "**Histogram**" -> "**Create Histogram Report**"
 
 ![Histogram](/media/06_00_02_01_Histogram.png)
