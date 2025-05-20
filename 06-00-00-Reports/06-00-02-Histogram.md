@@ -7,15 +7,15 @@ Enter "**Report**" -> "**Histogram**" -> "**Create Histogram Report**"
 Histogram report will show across specified time:
 
 -   Event Types consisting of:
-
+<br></br>
     - UP
-
+<br></br>
     - DOWN
-
+<br></br>
     - Unreachable
-
+<br></br>
 -   MIN,MAX,SUM and AVG value of a specified event type. 
-
+<br></br>
 -   Hosts included in the report are on the bottom of the screen. 
 
 
