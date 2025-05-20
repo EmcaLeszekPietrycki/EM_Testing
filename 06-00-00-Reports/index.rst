@@ -10,3 +10,4 @@ Reports
    06-00-04-Saved_reports
    06-00-05-Alert_history
    06-00-06-Schedule_reports
+   06-00-07-Event_log

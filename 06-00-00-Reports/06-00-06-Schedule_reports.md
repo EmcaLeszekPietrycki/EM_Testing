@@ -17,7 +17,7 @@ In this menu you will also see every scheduled report.
 <br></br>
 3. You can send your report to a single recipient via an email or multiple recipients, under "**Recpients**" field. Separate each e-ail address from the next, with a "**,**" sign. 
 <br></br>
-4. "**Filename**" field allwos you to specify the name for your report. 2 formats are available, PDF and CSV. By default PDF is generated, regardless of name. However, if you wish to generate a CSV file, make sure your name ends in .csv. 
+4. "**Filename**" field allows you to specify the name for your report. 2 formats are available, PDF and CSV. By default PDF is generated, regardless of name. However, if you wish to generate a CSV file, make sure your name ends in .csv. 
 
     ie. my_test_report.csv
 
