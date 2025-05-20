@@ -8,3 +8,4 @@ Reports
    06-00-02-Histogram
    06-00-03-Graphs
    06-00-04-Saved_reports
+   06-00-05-Alert_history
