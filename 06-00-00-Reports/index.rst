@@ -1,6 +1,9 @@
 Reports
 ================
 
+.. image:: /media/06_00_02_01_Histogram.png
+   :width: 1912px
+
 .. toctree::
    :maxdepth: 2
 
