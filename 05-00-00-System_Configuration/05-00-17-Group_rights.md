@@ -1,6 +1,6 @@
 # Group rights 
 
-Energy Monitor assigns permission by looking up the user's "**user group**".
+Energy Monitor assigns permissions by looking up the user's "**user group**".
 
 ![group_rights](/media/05_00_17_01_group_rights.png)
 
