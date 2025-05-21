@@ -11,3 +11,4 @@ Reports
    06-00-05-Alert_history
    06-00-06-Schedule_reports
    06-00-07-Event_log
+   06-00-08-All_notifications

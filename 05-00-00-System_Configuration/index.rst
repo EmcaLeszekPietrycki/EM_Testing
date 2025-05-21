@@ -18,3 +18,8 @@ Configuration Manual
    05-00-12-Buckets
    05-00-13-Plugins
    05-00-14-Geomap
+   05-00-15-Editing_commands
+   05-00-16-Timeperiod
+   05-00-17-Group_rights
+   05-00-18-Adding_users
+   

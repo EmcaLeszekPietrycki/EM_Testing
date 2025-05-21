@@ -2,6 +2,9 @@
 
 Energy Monitor can periodically send "**SLA**", "**Availability Reports**" and "**Alert Summary**" reports.
 
+Enter "**Report**" -> "**Schedule report**" 
+
+
 In this menu you will also see every scheduled report. 
 
 ![Schedule_reports](/media/06_00_06_01_Schedule_reports.png)
