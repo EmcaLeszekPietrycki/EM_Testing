@@ -1,10 +1,10 @@
 # Authentication modules
 
 <blockquote style="border-left: 8px solid orange; padding: 15px;"> <b>Note</b>: 
-All instructions below assume you are running OracleLinux8.10.
+All instructions below assume you are running OracleLinux8.X.
 </blockquote>
 
-## Setting up Authentication Module
+## Setting up an Authentication Module
 
 1. Enter "**Manage**" -> "**Configure**" -> "**Authentication Modules**"
 
@@ -94,7 +94,7 @@ Setting up the module to utilize Apache only:
 </blockquote>
 
 <blockquote style="border-left: 8px solid orange; padding: 15px;"> <b>Note</b>: 
-in OracleLinux 8.10 these modules are usually already included with httpd server.
+in OracleLinux 8.X these modules are usually already included with httpd server.
 </blockquote>
 <br>
 3. Configure Apache for LDAP authentication:
@@ -130,7 +130,7 @@ Ensure the vailidty of certificates
 
 <br>
 4. Restart Apache service:
-<br></br>
+<br>
 <blockquote>
 <strong>systemctl restart httpd</strong>
 </blockquote>
@@ -174,7 +174,7 @@ AuthBasicProbvider is set to file and ldap.
 
 <br>
 
-### 4. Optional, System-Level LDAP, to use with SSH or console, on OracleLinux8.10:
+### 4. Optional, System-Level LDAP, to use with SSH or console, on OracleLinux8.X:
 
 1. Install SSSD and LDAP tools:
 <blockquote>
@@ -214,3 +214,25 @@ AuthBasicProbvider is set to file and ldap.
 <blockquote>
 <strong>systemctl restart httpd</strong>
 </blockquote>
+
+### Optional Improvements
+
+
+
+![Authentication_modules](/media/05_00_19_04_Authentication_modules.png)
+
+In case of performance problems, the administrator can install PHP extensions to help mitigate this issue:
+
+   - **APC (Alternative PHP Cache)**
+
+       - This extension caches compiled PHP scripts, so they don't have to be recompiled on every request. It also stores application data in memory, reducing the need for repeated queries to the database.   
+
+   - Key settings:
+
+       - **apc_ttl** 
+
+           - "Time to live", determines how long the data is stored in the cache.
+
+       - **apc_store_prefix**:
+
+           - Defines a prefix for cached keys, preventing naming collisions between applications and modules. 
