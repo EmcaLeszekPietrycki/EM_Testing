@@ -24,3 +24,4 @@ Configuration Manual
    05-00-18-Adding_users
    05-00-19-Authentication_modules
    05-00-20-Templates
+   05-00-21-View_Active_config
