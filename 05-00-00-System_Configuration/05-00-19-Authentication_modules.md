@@ -200,7 +200,7 @@ group: files sss
 5. Restart services:
 
 <blockquote>
-systemctl restart sssd
+<strong>systemctl restart sssd</strong>
 </blockquote>
 <br>
 
@@ -228,7 +228,7 @@ In case of performance problems, the administrator can install PHP extensions to
        - This extension caches compiled PHP scripts, so they don't have to be recompiled on every request. It also stores application data in memory, reducing the need for repeated queries to the database.   
 
    - Key settings:
-<br>
+
        - **apc_ttl** 
 
            - "Time to live", determines how long the data is stored in the cache.
