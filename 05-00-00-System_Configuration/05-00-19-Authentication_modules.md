@@ -180,13 +180,13 @@ AuthBasicProbvider is set to file and ldap.
 <strong> dnf install sssd authselect </strong>
 </blockquote>
 
-<br>2. Configure authselect:
+2. Configure authselect:
 
 <blockquote>
 <strong>authselect select sssd with-ldap --force</strong>
 </blockquote>
 
-<br>3. Edit <strong>/etc/ssd/ssd.conf</strong> to point to your LDAP server  
+3. Edit <strong>/etc/ssd/ssd.conf</strong> to point to your LDAP server  
 
 4. Configure <strong>/etc/nsswitch.conf</strong> to include <strong>ldap</strong> or <strong>sss</strong> for passwd and group:
 
