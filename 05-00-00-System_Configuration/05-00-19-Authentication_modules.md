@@ -85,7 +85,7 @@ Setting up the module to utilize Apache only:
 <strong>dnf install httpd mod_ldap mod_ssl</strong>
 </blockquote>
 
-<br>2. Enable the required modules:
+2. Enable the required modules:
 
 <blockquote>
 <strong>systemctl enable --now httpd</strong>
