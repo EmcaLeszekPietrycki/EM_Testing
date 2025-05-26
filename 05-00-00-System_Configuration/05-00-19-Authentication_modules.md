@@ -128,9 +128,8 @@ LDAPS, if you support SSL, can be used as well: ldaps:// and port 636.
 Ensure the vailidty of certificates
 </blockquote>
 
-<br>
-4. Restart Apache service:
-<br>
+<br>4. Restart Apache service:
+</br>
 <blockquote>
 <strong>systemctl restart httpd</strong>
 </blockquote>
