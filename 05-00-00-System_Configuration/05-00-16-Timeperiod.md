@@ -2,7 +2,7 @@
 
 In the host configuration menu there is a field called: "**check_period**". 
 
-This field contains "**Timeperiods**" which are essentially calendars for notifications and service checks, they govern at which days and hours should be active.
+This field contains "**Timeperiods**" which are essentially calendars for notifications and service checks, they govern at which days and hours they should be active.
 
 In the host configuration menu timeperiods are managed by these fields:
 
@@ -23,7 +23,7 @@ Enter "**Manage**" -> "**Configure**" -> "**Timeperiods**"
 ![Timeperiod](/media/05_00_16_03_Timeperiod.png)
 
 1. Insert mandatory data, such as name of the timeperiod, alias and the file in which it will be saved.
-
+<br></br>
 2. Each day can be set individually, syntax is as follows: 
 
 <blockquote>
