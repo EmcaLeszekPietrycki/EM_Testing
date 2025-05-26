@@ -187,6 +187,7 @@ AuthBasicProbvider is set to file and ldap.
 </blockquote>
 
 3. Edit <strong>/etc/ssd/ssd.conf</strong> to point to your LDAP server  
+<br>
 
 4. Configure <strong>/etc/nsswitch.conf</strong> to include <strong>ldap</strong> or <strong>sss</strong> for passwd and group:
 
