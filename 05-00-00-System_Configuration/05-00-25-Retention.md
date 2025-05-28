@@ -3,11 +3,11 @@
 Energy Monitor includes a feature of "**Retention**" which allows for  3 operations:
 
 -   Deleting metrics older than X units of time. 
-
+<br></br>
 -   Backup metrics older than X units of time. 
 
     -   Daily backup is also available.
-
+<br></br>
 -   Restore metrics that occured between 2 dates. 
 
     -   Daily restore is also available.
