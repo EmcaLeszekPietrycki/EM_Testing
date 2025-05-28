@@ -25,3 +25,8 @@ Configuration Manual
    05-00-19-Authentication_modules
    05-00-20-Templates
    05-00-21-View_Active_config
+   05-00-22-Manage_filters
+   05-00-23-Scheduling_queue
+   05-00-24-Performance_Process_Information
+   05-00-25-Retention
+   05-00-26-My_Account_options

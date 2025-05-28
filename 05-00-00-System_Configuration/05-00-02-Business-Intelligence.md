@@ -75,3 +75,35 @@ This type of BI group is configured to always report a fixed status—OK, WARNIN
 - Fixed UNKNOWN:  The group always returns an unknown status, indicating that the actual state cannot be determined or is not applicable.
 
 This configuration is ideal for testing, overriding dynamic calculations, or maintaining consistent reporting in specific scenarios.
+
+
+## Setup
+
+In order to set up Business Intelligence the following must be done:
+
+Enter "**Monitor**" -> "**Business Intelligence**":
+
+![BI](/media/05_00_02_01_Business_Intelligence.png)
+
+
+
+![BI](/media/05_00_02_02_Business_Intelligence.png)
+
+![BI](/media/05_00_02_03_Business_Intelligence.png)
+
+![BI](/media/05_00_02_04_Business_Intelligence.png)
+
+![BI](/media/05_00_02_05_Business_Intelligence.png)
+
+![BI](/media/05_00_02_06_Business_Intelligence.png)
+
+![BI](/media/05_00_02_07_Business_Intelligence.png)
+
+Tick the "**checkboxes**" next to the menu You wish to hide, then save the settings with "**Save New Settings**" button.
+
+<blockquote style="border-left: 8px solid orange; padding: 15px;"> <b>Note</b>: 
+It doesn't restrict access rights of the group in any capacity. 
+</blockquote>
+<br>
+
+![My_Account](/media/05_00_26_03_My_Account.png)
