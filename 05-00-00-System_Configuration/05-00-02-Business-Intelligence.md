@@ -113,15 +113,15 @@ In order to add 1 group into another, the following must be done:
 During creation of a group, few optional parameters can be chosen:
 
 -  "**[Essential Member](#essential-member)**"
-<br>
+<br></br>
 -   "**Deploy as a Service**"
-<br>
+<br></br>
     -   This option will create a service on the chosen host, specified under the "**Host**" field. 
-<br>
+<br></br>
     -   This service will be visible under the "**View**" button.
 
 -   "**Primary Group**"    
-
+<br></br>
 
 ![BI](/media/05_00_02_02_Business_Intelligence.png)
 
