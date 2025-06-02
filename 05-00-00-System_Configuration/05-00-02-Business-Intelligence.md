@@ -1,4 +1,4 @@
-# Business Intelligence (BPI)
+# Business Intelligence (BI)
 
 ### Overview
 
@@ -130,7 +130,7 @@ During creation of a group, few optional parameters can be chosen:
 ![BI](/media/05_00_02_04_Business_Intelligence.png)
 
 <blockquote style="border-left: 8px solid orange; padding: 15px;"> <b>Note</b>: 
-States in BPI are the same as when using thresholds and notifications from the host main menu. The same logic applies. 
+States in BI are the same as when using thresholds and notifications from the host main menu. The same logic applies. 
 </blockquote>
 
 
