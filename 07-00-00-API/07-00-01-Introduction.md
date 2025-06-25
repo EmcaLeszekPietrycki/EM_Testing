@@ -5,31 +5,36 @@ Energy Monitor utilizes REST-API, so the administrator can issue commands direct
 
 Essentially, one can operate various aspects of Energy Monitor from the level of the command line.
 
-The following guide contains helpful tips on the methodology of formulating these reqeuests with appropriate help pages.
+The following guide contains helpful tips on the methodology of formulating these requests with appropriate help pages.
+
+<blockquote>
 
 Requests can be performed with:
 
 -   Shell:
 
     -   Curl
-
+<br></br>
 -   Scripting Languages
 
     -   Python
 
     -   PHP
+</blockquote>
+
 
 Expected performance for passive checks via API should be around 10 checks/minute.
 
 A valid request must met few requirements depending how it is performed:
 
+<blockquote>
 -   The URL format:
-
+<br></br>
     -   /api/config/host
     -   /api/config/host/{host_name}
 
 -   The HTTP format
-
+<br></br>
     -   GET:
         -   lists object
     -   POST: 
@@ -42,9 +47,11 @@ A valid request must met few requirements depending how it is performed:
         -   delete objects
 
 -   HTTP header format:
-
+<br></br>
     -    -H 'accept: application/json' \
     -    -H 'Content-Type: application/json' \
+
+</blockquote>
 
 Energy Monitor has internal API query editor available at the following:
 
@@ -150,7 +157,7 @@ PHP with cURL: Adding a
 curl_setopt($a_handle, CURLOPT_SSL_VERIFYPEER, false);
 ```
 
-You have the capcity to log either with basic login and password or LDAP. 
+You have the capacity to log either with basic login and password or LDAP. 
 
 When you have more than one auth module, for example "Default" and "LDAP", you need to specify which to authenticate against. This is done with the dollar character ('$').
 
@@ -169,7 +176,7 @@ curl -u 'user$Default:password' https://monitor/api/config/host
 
 LDAP:
 
-If utulizing LDAP verification, in curl, use the **"$"** sign:
+If utilizing LDAP verification, in curl, use the **"$"** sign:
 ```
 curl -X 'PUT' https://192.168.3.166/api/config/host/TEST -H 'accept: application/json' -H 'Content-Type: application/json' -k **-u 'admin$LDAP:admin'** -d @/home/Testy_API/host_update.json
 ```
@@ -177,7 +184,8 @@ curl -X 'PUT' https://192.168.3.166/api/config/host/TEST -H 'accept: application
 **'** is dependent on the environment, in bash, it's mandatory.
 
 ### Restricting access to the API
-By editing API config files you can decide wether to accept or reject connections to the API based on connection method. For now, there are two categories: basic_auth and ninja.
+
+By editing API config files you can decide whether to accept or reject connections to the API based on connection method. For now, there are two categories: basic_auth and ninja.
 
 If you disallow basic_auth, you can no longer access the API through scripts as described in all examples in this documentation.
 If you disallow ninja, you can no longer access the API through AJAX requests carried out by code in Monitor, such as the Host Wizard.
@@ -200,23 +208,23 @@ Example
 ```
 curl -u admin:admin -k https://192.168.3.166/api/config/host/test/ -X "PATCH" -H "content-type: application/json" -d '{"_ENVIRONMENT": "production"}'
 ```
--   This will add a custom variable _ENBIRONMENT to the host "test".
+-   This will add a custom variable _ENVIRONMENT to the host "test".
 ```
 curl -u admin:admin -k https://192.168.3.166/api/config/host/test/ -X "PATCH" -H "content-type: application/json" -d '{"_ENVIRONMENT": "staging"}'
 ```
--   This will update a custom variable _ENBIRONMENT to the host "test".
+-   This will update a custom variable _ENVIRONMENT to the host "test".
 
 ### Adding multiple variables at once
 ```
 curl -u admin:admin -k https://192.168.3.166/api/config/host/test/ -X "PATCH" -H "content-type: application/json" -d '{"_ENVIRONMENT": "staging", "_OWNER":"ops_team"}'
 ```
--   This will add custom variables _ENBIRONMENT and _OWNER to the host "test".
+-   This will add custom variables _ENVIRONMENT and _OWNER to the host "test".
 
 ### Removing custom variables:
 ```
 curl -u admin:admin -k https://192.168.3.166/api/config/host/test/ -X "PATCH" -H "content-type: application/json" -d '{"_ENVIRONMENT": "null"}'
 ```
--   This will removecustom variables _ENBIRONMENT of the host "test".
+-   This will remove custom variables _ENVIRONMENT of the host "test".
 ```
 curl -X 'GET' https://192.168.3.166/api/config/change -k -u admin:admin
 ```
@@ -243,7 +251,7 @@ curl -X 'GET' 'https://192.168.3.166/api/filter/query?query=%5Bhosts%5D%20state%
 curl -X 'GET' 'https://192.168.3.166/api/filter/query?query=%5Bhosts%5D%20state%20%3D%201&columns=display_name%2Caddress%2Calias' -H 'accept: application/json' -H 'Authorization: Basic YWRtaW46YWRtaW4=' -H 'X-CSRF-TOKEN: ' -k -o output.json | jq
 ```
 
-As you can see, the columns are separated by **"%2C"**
+As you can see, the columns are separated by stanard URL encoding of **"%2C"**
 
 
 
@@ -301,38 +309,3 @@ curl -X 'GET' 'https://192.168.3.166/api/filter/count?query=%5Bhosts%5D%20state%
 
 The query looks up all hosts with a state of 1. 
 
-
-
-
-
-
-#####################################################################################
-
-
-
-
-
-
-
-<blockquote style="border-left: 8px solid orange; padding: 15px;"> <b>Note</b>: 
-All instructions below assume you are running OracleLinux8.X.
-</blockquote>
-
-## Setting up 
-
-1. Enter "**Manage**" -> "**Configure**" -> "**Authentication Modules**"
-
-
-![Integration_with_Discord](/media/05_00_28_01_Integration_with_Discord.png)
-
-![Integration_with_Discord](/media/05_00_28_02_Integration_with_Discord.png)
-
-![Integration_with_Discord](/media/05_00_28_03_Integration_with_Discord.png)
-
-![Integration_with_Discord](/media/05_00_28_04_Integration_with_Discord.png)
-
-![Integration_with_Discord](/media/05_00_28_05_Integration_with_Discord.png)
-
-![Integration_with_Discord](/media/05_00_28_06_Integration_with_Discord.png)
-
-![Integration_with_Discord](/media/05_00_28_07_Integration_with_Discord.png)
