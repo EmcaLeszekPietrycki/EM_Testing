@@ -7,20 +7,20 @@ Essentially, one can operate various aspects of Energy Monitor from the level of
 
 The following guide contains helpful tips on the methodology of formulating these requests with appropriate help pages.
 
-<blockquote>
+```
 
 Requests can be performed with:
 
 -   Shell:
 
     -   Curl
-<br></br>
+
 -   Scripting Languages
 
     -   Python
 
     -   PHP
-</blockquote>
+```
 
 
 Expected performance for passive checks via API should be around 10 checks/minute.
@@ -29,26 +29,31 @@ A valid request must met few requirements depending how it is performed:
 
 ```
 -   The URL format:
-        -   /api/config/host
-        -   /api/config/host/{host_name}
+
+    -   /api/config/host
+    -   /api/config/host/{host_name}
 
 -   The HTTP format
 
     -   GET:
         -   lists object
+
     -   POST: 
         -   creates objects
-    -   PUT: 
+
+    -   PUT:
         -   overwrites objects
-    -   PATCH: 
+
+    -   PATCH:
         -   update objects
+
     -   DELETE: 
         -   delete objects
 
 -   HTTP header format:
 
-    -    -H 'accept: application/json' \
-    -    -H 'Content-Type: application/json' \
+    -    -H 'accept: application/json' 
+    -    -H 'Content-Type: application/json' 
 ```
 
 Energy Monitor has internal API query editor available at the following:
