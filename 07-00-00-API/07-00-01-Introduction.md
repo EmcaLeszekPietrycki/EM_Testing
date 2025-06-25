@@ -117,12 +117,11 @@ Examples of status codes:
 <blockquote style="border-left: 8px solid orange; padding: 15px;"> <b>Note</b>: 
 With methods like POST or PATCH, you will see in the curl query, a long list of options that will be passed.
 <br></br>
-Instead of pasting all those lines into the shell, it's more convenient to create a file, let's say **"host_update.json"**. You use the **"-d"** flag to point the command to read from the created file (remember to place the **"@"** sign prior to path):
+Instead of pasting all those lines into the shell, it's more convenient to create a file, let's say <b>**"host_update.json"**</b>. You use the <b>**"-d"**</b> flag to point the command to read from the created file (remember to place the <b>**"@"**</b> sign prior to path):
 <br></br>
 Example:
 <br></br>
 <blockquote>curl -X 'PUT' https://192.168.3.166/api/config/host/TEST -H 'accept: application/json' -H 'Content-Type: application/json' -k -u admin:admin -d @/home/Testy_API/host_update.json</blockquote> 
-
 Keep in mind that all the changes made to the configuration, aren't automatically saved into the database. 
 </blockquote>
 <br></br>
