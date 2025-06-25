@@ -117,7 +117,7 @@ Examples of status codes:
 <blockquote style="border-left: 8px solid orange; padding: 15px;"> <b>Note</b>: 
 With methods like POST or PATCH, you will see in the curl query, a long list of options that will be passed.
 <br></br>
-Instead of pasting all those lines into the shell, it's more convenient to create a file, let's say <b>**"host_update.json"**</b>. You use the <b>**"-d"**</b> flag to point the command to read from the created file (remember to place the <b>**"@"**</b> sign prior to path):
+Instead of pasting all those lines into the shell, it's more convenient to create a file, let's say <b>"host_update.json"</b>. You use the <b>"-d"</b> flag to point the command to read from the created file (remember to place the <b>"@"</b> sign prior to path):
 <br></br>
 Example:
 <br></br>
