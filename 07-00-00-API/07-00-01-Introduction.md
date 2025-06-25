@@ -27,14 +27,13 @@ Expected performance for passive checks via API should be around 10 checks/minut
 
 A valid request must met few requirements depending how it is performed:
 
-<blockquote>
+```
 -   The URL format:
-<br></br>
-    -   /api/config/host
-    -   /api/config/host/{host_name}
+        -       /api/config/host
+        -       /api/config/host/{host_name}
 
 -   The HTTP format
-<br></br>
+
     -   GET:
         -   lists object
     -   POST: 
@@ -47,11 +46,10 @@ A valid request must met few requirements depending how it is performed:
         -   delete objects
 
 -   HTTP header format:
-<br></br>
+
     -    -H 'accept: application/json' \
     -    -H 'Content-Type: application/json' \
-
-</blockquote>
+```
 
 Energy Monitor has internal API query editor available at the following:
 
@@ -60,6 +58,7 @@ Energy Monitor has internal API query editor available at the following:
 ![API_Introduction](/media/07-00-01-02-Introduction.png)
 
 Every category contains interactive editor for every HTTP method.
+
 ```
 The editor contains following categories:
 
@@ -117,7 +116,7 @@ Instead of pasting all those lines into the shell, it's more convenient to creat
 <br></br>
 Example:
 <br></br>
-curl -X 'PUT' https://192.168.3.166/api/config/host/TEST -H 'accept: application/json' -H 'Content-Type: application/json' -k -u admin:admin -d @/home/Testy_API/host_update.json 
+<blockquote>curl -X 'PUT' https://192.168.3.166/api/config/host/TEST -H 'accept: application/json' -H 'Content-Type: application/json' -k -u admin:admin -d @/home/Testy_API/host_update.json</blockquote> 
 <br></br>
 Keep in mind that all the changes made to the configuration, aren't automatically saved into the database. 
 </blockquote>
