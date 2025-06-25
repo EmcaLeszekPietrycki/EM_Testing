@@ -154,11 +154,13 @@ requests.get('<API endpoint here>', auth=('<your username>', '<your password>'),
 ```
 
 in PHP with cURL, You would need to add a CURLOPT_SSL_VERIFYPEER flag
-PHP with cURL: Adding a 
+PHP with cURL: 
 
 ```
 curl_setopt($a_handle, CURLOPT_SSL_VERIFYPEER, false);
 ```
+
+## Authorization Types
 
 You have the capacity to log either with basic login and password or LDAP. 
 
@@ -307,7 +309,7 @@ The query looks up:
 #### Example of a count:
 
 ```
-curl -X 'GET' 'https://192.168.3.166/api/filter/count?query=%5Bhosts%5D%20state%20%3D%201' -H 'accept: application/json' H 'Authorization: Basic YWRtaW46YWRtaW4=' -k -u admin:admin
+curl -X 'GET' 'https://192.168.3.166/api/filter/count?query=%5Bhosts%5D%20state%20%3D%201' -H 'accept: application/json' -H 'Authorization: Basic YWRtaW46YWRtaW4=' -k -u admin:admin
 ```
 
 The query looks up all hosts with a state of 1. 
