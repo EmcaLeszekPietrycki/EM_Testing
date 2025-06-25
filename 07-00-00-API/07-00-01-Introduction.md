@@ -122,7 +122,7 @@ Instead of pasting all those lines into the shell, it's more convenient to creat
 Example:
 <br></br>
 <blockquote>curl -X 'PUT' https://192.168.3.166/api/config/host/TEST -H 'accept: application/json' -H 'Content-Type: application/json' -k -u admin:admin -d @/home/Testy_API/host_update.json</blockquote> 
-<br></br>
+
 Keep in mind that all the changes made to the configuration, aren't automatically saved into the database. 
 </blockquote>
 <br></br>
