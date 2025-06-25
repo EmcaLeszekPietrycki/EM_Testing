@@ -29,8 +29,8 @@ A valid request must met few requirements depending how it is performed:
 
 ```
 -   The URL format:
-        -       /api/config/host
-        -       /api/config/host/{host_name}
+        -   /api/config/host
+        -   /api/config/host/{host_name}
 
 -   The HTTP format
 
