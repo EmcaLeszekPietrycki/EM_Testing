@@ -60,7 +60,7 @@ define command {
 ```
 
 -   Python scirpts to be placed in /opt/energy-monitor/notify/
-
+<br></br>
     -   Remember to change ownership to naemon:apache with "**chown**" command
 <br></br>
     - notify_by_host-discord.py
@@ -326,9 +326,9 @@ To check the set up, the adiministrator can do the following:
 
 -   from /opt/energy-monitory/notify:
 
-<blockquote style="border-left: 8px solid orange; padding: 15px;">
+```
 python3 /opt/energy-monitor/notify/notify_by_host-discord.py   -c "webhook_URL" -n "hostname" -s "state" -l "label/alias"
-</blockquote>
+```
 <br>
 
 -   This will send the most mandatory information in the payload, if everything is working properly, You should see "**Notification sent successfully**"
