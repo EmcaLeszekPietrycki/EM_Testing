@@ -320,13 +320,17 @@ To check the set up, the adiministrator can do the following:
 ```
 python3 /opt/energy-monitor/notify/notify_by_host-discord.py   -c "webhook_URL" -n "hostname" -s "state" -l "label/alias"
 ```
+```
+python3 /opt/energy-monitor/notify/notify_by_host-discord.py -c https://discord.com/api/webhooks/1377647158395928596/6q1SjBP6ujA7YXvpcjwa3WkEhN9uWvTqfsbsrGYnQShp07lGzwmVd2wgL4vUewIQIA4K -n "ASTA-NET" -s "UP" -l "Main Server"
+```
 <br>
 
 ```
 python3 /opt/energy-monitor/notify/notify_by_service-discord.py   -c "webhook" -n "hostname" -s "state" -l "label/alias"
 ```
-
-
+```
+python3 /opt/energy-monitor/notify/notify_by_service-discord.py -c https://discord.com/api/webhooks/1377647158395928596/6q1SjBP6ujA7YXvpcjwa3WkEhN9uWvTqfsbsrGYnQShp07lGzwmVd2wgL4vUewIQIA4K -n "ASTA-NET" -s "UP" -l "Main Server"
+```
 
 -   This will send the most mandatory information in the payload, if everything is working properly, You should see "**Notification sent successfully**"
 
