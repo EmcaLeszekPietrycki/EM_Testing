@@ -30,8 +30,6 @@ What we want from this section is the "**Webhook**", which is a method for sendi
 <br></bR>
     -   notify-service-by-discord  
 
-<br></br>
-
 
 ![Integration_with_Discord](/media/05_00_28_04_Integration_with_Discord.png)
 
@@ -51,20 +49,6 @@ define command {
 ```
 
 <br>
-
-```
-#command 'notify_by_service_discord'
-define command {
-    command_name                  notify-by-service-discord
-    command_line                  /opt/energy-monitor/notify/notify_by_service-discord.py -c "$CONTACTEMAIL$" -t "$NOTIFICATIONTYPE$" -d "$LONGDATETIME$" -n "$HOSTNAME$" -s "$HOSTSTATE$" -a "$HOSTADDRESS$" -l "$HOSTALIAS$" -e "$HOSTNOTES$" -u "$HOSTACTIONURL$" -r "$HOSTNOTESURL$" -f "$SERVICEDESC$" -g "$SERVICESTATE$" -p "$SERVICEACTIONURL$" -i "$SERVICENOTESURL$" -j "$SERVICEDOWNTIME$" -k "$SERVICEOUTPUT$" -m "$NOTIFICATIONCOMMENT$" -z "$HOSTDOWNTIME$" --energymonitorsite "https://demo-monitor.energylogserver.pl/" }
-```
-
--   Python scripts to be placed in /opt/energy-monitor/notify/
-<br></br>
-    -   Remember to change ownership to "**naemon:apache**" with "**chown**" command
-<br></br>
-    - notify_by_host-discord.py
-<br></br>
 
 ```
 #!/usr/bin/env python3.6
@@ -185,6 +169,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
 ```
 
 <br>
@@ -275,13 +262,15 @@ def main():
     ]
 
     embed = {
-        "title": "title123",
-        "color": host_state_color,
-        "description": "testestest",
-        "author": {
-            "name": "ENERGY MONITOR"
-        }
-    }
+    "title": "Test Notification",
+    "description": "This is a test.",
+    "color": service_state_color,  # green
+    "fields": [
+        {"name": "Host", "value": "ASTA-NET", "inline": True},
+        {"name": "Status", "value": "UP", "inline": True}
+    ],
+    "author": {"name": "ENERGY MONITOR"}
+}
 
     if args.hostactionurl:
         fields.append({"name": "Host Action URL", "value": args.hostactionurl, "inline": True})
@@ -316,6 +305,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 ```
 
 
@@ -330,6 +321,12 @@ To check the set up, the adiministrator can do the following:
 python3 /opt/energy-monitor/notify/notify_by_host-discord.py   -c "webhook_URL" -n "hostname" -s "state" -l "label/alias"
 ```
 <br>
+
+```
+python3 /opt/energy-monitor/notify/notify_by_service-discord.py   -c "webhook" -n "hostname" -s "state" -l "label/alias"
+```
+
+
 
 -   This will send the most mandatory information in the payload, if everything is working properly, You should see "**Notification sent successfully**"
 
