@@ -59,9 +59,9 @@ define command {
     command_line                  /opt/energy-monitor/notify/notify_by_service-discord.py -c "$CONTACTEMAIL$" -t "$NOTIFICATIONTYPE$" -d "$LONGDATETIME$" -n "$HOSTNAME$" -s "$HOSTSTATE$" -a "$HOSTADDRESS$" -l "$HOSTALIAS$" -e "$HOSTNOTES$" -u "$HOSTACTIONURL$" -r "$HOSTNOTESURL$" -f "$SERVICEDESC$" -g "$SERVICESTATE$" -p "$SERVICEACTIONURL$" -i "$SERVICENOTESURL$" -j "$SERVICEDOWNTIME$" -k "$SERVICEOUTPUT$" -m "$NOTIFICATIONCOMMENT$" -z "$HOSTDOWNTIME$" --energymonitorsite "https://demo-monitor.energylogserver.pl/" }
 ```
 
--   Python scirpts to be placed in /opt/energy-monitor/notify/
+-   Python scripts to be placed in /opt/energy-monitor/notify/
 <br></br>
-    -   Remember to change ownership to naemon:apache with "**chown**" command
+    -   Remember to change ownership to "**naemon:apache**" with "**chown**" command
 <br></br>
     - notify_by_host-discord.py
 <br></br>
