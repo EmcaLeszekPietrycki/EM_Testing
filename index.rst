@@ -2,7 +2,7 @@ Welcome to Energy Monitor's Documentation!
 ==========================================
 
 .. toctree::
-   :maxdepth: 10
+   :maxdepth: 15
    :caption: Table of Contents
 
    01-00-00-About/index
@@ -14,3 +14,4 @@ Welcome to Energy Monitor's Documentation!
    07-00-00-API/index
    08-00-00-Notifications-Integrations/index
 
+   
