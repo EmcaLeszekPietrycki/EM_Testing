@@ -43,6 +43,8 @@ Buckets are added during the creation of host in Energy Monitor, therefore the i
 <br></br>
 If for instance, a disk is added to the host later, a scan in scheduler needs to be planned and executed.
 <br></br>
-More details on how to set up the scans can be found in a section dedicated to the [Scheduler](https://kb.monitor.energylogserver.com/en/latest/05-00-00-System_Configuration/05-00-11-Scheduler.html#scheduler)
+More details on how to set up the scans can be found in a section dedicated to the
+
+[Scheduler](https://kb.monitor.energylogserver.com/en/latest/05-00-00-System_Configuration/05-00-11-Scheduler.html#scheduler)
 </blockquote>
 
