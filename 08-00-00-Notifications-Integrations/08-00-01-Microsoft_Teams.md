@@ -54,7 +54,7 @@ What we want from this section is the "**Webhook**", which is a method for sendi
 ![Integration_with_MSTeams](/media/08_00_00_08_Integration_with_MSTeams.png)
 ![Integration_with_MSTeams](/media/08_00_00_09_Integration_with_MSTeams.png)
 
-<blockquote style="border-left: 8px solid red; padding: 15px;"> <b>Note</b>: 
+<blockquote style="border-left: 8px solid red; padding: 15px;"> <b>Note</b>: KK
 Please be mindful to pick the option with the ID of 94557. 
 </blockquote>
 <br>
